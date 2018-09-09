@@ -1,5 +1,7 @@
 ### IntelliJ IDEA ###
 .idea
 out
+.DS_Store
+
 
 
