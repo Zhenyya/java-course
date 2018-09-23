@@ -2,12 +2,15 @@ package com.java.woman.oop.motors;
 
 import com.java.woman.oop.Vehicle;
 
-public abstract class MotorVehicle extends Vehicle {
+public class MotorVehicle extends Vehicle {
 
   private Motor motor;
 
+  String name;
+
   public MotorVehicle(Motor motor) {
     this.motor = motor;
+    this.name = "MotorVehicle";
   }
 
   protected void startMotor() {
@@ -17,5 +20,9 @@ public abstract class MotorVehicle extends Vehicle {
   @Override
   public void drive() {
     startMotor();
+  }
+
+  public String getName() {
+    return name;
   }
 }
